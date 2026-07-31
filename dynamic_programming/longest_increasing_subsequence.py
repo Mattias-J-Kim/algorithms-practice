@@ -6,6 +6,8 @@ Learning note:
     Solved with much less guidance than earlier DP problems in this repo —
     derived the recurrence and the "take max over all valid j < i" idea
     largely on my own after working through Knapsack and Coin Change.
+    (Those two were earlier exercises and are not included in this
+    repository; they are referenced below only as points of contrast.)
 
     What I actually learned:
     - dp[i] does NOT mean "LIS length using the first i elements" the way
