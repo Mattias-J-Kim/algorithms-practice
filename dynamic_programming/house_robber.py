@@ -9,6 +9,8 @@ Learning note:
     actual rule of the problem (skip only directly adjacent houses) and
     re-deriving the recurrence from that, rather than pattern-matching
     off of Knapsack/Coin Change's two-branch structure.
+    (Knapsack and Coin Change were earlier exercises and are not
+    included in this repository.)
 
     What I actually learned:
     - dp[i] means "the max amount obtainable considering houses 0..i" —
