@@ -6,7 +6,8 @@ Learning note:
     The key insight — that LPS(s) = LCS(s, reverse(s)) — was given as a
     starting hint, but the DP table itself was built from scratch by
     directly reusing the LCS recurrence from earlier work in this repo
-    (lcs.py). Two bugs came up while adapting it, both worth recording:
+    (longest_common_subsequence.py). Two bugs came up while adapting
+    it, both worth recording:
 
     Bug 1: On a match, briefly tried
         dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1)
