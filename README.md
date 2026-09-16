@@ -76,8 +76,6 @@ java <ClassName>.java
 
 ## Method
 
-## Method
-
 Claude (AI assistant) was used in a Socratic mode: it set the specifications
 and test cases, and when I was stuck it asked targeted questions or explained
 concepts instead of giving code.
