@@ -13,8 +13,8 @@ application lives in
 [bioinformatics-from-scratch](https://github.com/Mattias-J-Kim/bioinformatics-from-scratch)
 and this repository keeps the general form.
 
-Each file carries its own learning notes: the recurrence, and the bugs that came
-up while deriving it.
+Each file carries its own notes: the recurrence, and in most files the bugs
+that came up while deriving it.
 
 ## dynamic_programming/
 
@@ -82,6 +82,8 @@ concepts instead of giving code.
 
 - **Code:** all implementation code was written by me.
 - **Documentation:** the explanatory text (header comments and this README)
+- * Exception, `recursion/`: specifications and test inputs came from a
+  university Data Structures course. ...
   was drafted with Claude and reviewed by me.
 - **Exception, `recursion/`:** specifications came from a university Data
   Structures course. Claude was used afterwards to document the code and to
