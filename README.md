@@ -2,7 +2,7 @@
 
 Dynamic programming and algorithm practice, separate from biology-specific work.
 
-Python 3, standard library only. No external dependencies.
+Python and Java, standard library only. No external dependencies.
 
 ## Purpose
 
@@ -49,6 +49,16 @@ working through them in this order was to see the same shapes recur.
   input (airport codes rather than k-mers) to check that the algorithm had been
   understood rather than memorized.
 
+## recursion/
+
+Java, from a university Data Structures lab. Unlike the rest of this
+repository, the problem specifications here came from the course rather than
+from the Socratic sessions described under Method.
+
+- `Power.java` — x^n by repeated squaring; O(log n) calls instead of O(n)
+- `BinarySum.java` — array sum by halving the range; work stays O(n) but recursion depth drops to O(log n)
+- `LinearFib.java` — Fibonacci returning the pair (F(n), F(n-1)), turning the exponential two-call recursion into a single call per step
+
 ## Usage
 
 Each script is standalone. Inputs are assigned as plain variables at the bottom
@@ -58,9 +68,24 @@ of the file rather than passed as arguments — edit those assignments and run:
 python <script_name>.py
 ```
 
+Java files (Java 11+) run directly from source:
+
+```
+java <ClassName>.java
+```
+
 ## Method
 
-These problems were worked through with an AI assistant (Claude) used in a
-Socratic mode: the assistant set the specifications and test cases, and when I
-was stuck responded with targeted questions and conceptual explanations rather
-than code. All implementation code was written by me.
+## Method
+
+Claude (AI assistant) was used in a Socratic mode: it set the specifications
+and test cases, and when I was stuck it asked targeted questions or explained
+concepts instead of giving code.
+
+- **Code:** all implementation code was written by me.
+- **Documentation:** the explanatory text (header comments and this README)
+  was drafted with Claude and reviewed by me.
+- **Exception, `recursion/`:** specifications came from a university Data
+  Structures course. Claude was used afterwards to document the code and to
+  reformat it (English strings, naming, indentation) without changing the
+  logic; I reviewed both the documentation and the reformatted code.
