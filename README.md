@@ -59,6 +59,16 @@ from the Socratic sessions described under Method.
 - `BinarySum.java` — array sum by halving the range; work stays O(n) but recursion depth drops to O(log n)
 - `LinearFib.java` — Fibonacci returning the pair (F(n), F(n-1)), turning the exponential two-call recursion into a single call per step
 
+## stacks_queues/
+
+Java, from the same Data Structures course; specifications came from the
+course, as with `recursion/`.
+
+- `Stack.java`, `Queue.java` — ADT interfaces (char elements)
+- `ArrayStack.java` — fixed-capacity array stack; `top = -1` means empty, so `size()` is `top + 1`
+- `StackQueue.java` — FIFO queue built from two stacks; elements move to the output stack only when it is empty, giving O(1) amortized per operation
+- `ReverseExpression.java` — reverses an expression with a stack, swapping `(` and `)` on the way out so the result stays balanced
+
 ## Usage
 
 Each script is standalone. Inputs are assigned as plain variables at the bottom
@@ -74,6 +84,13 @@ Java files (Java 11+) run directly from source:
 java <ClassName>.java
 ```
 
+Files in `stacks_queues/` depend on each other, so compile the folder first:
+
+```
+javac *.java
+java StackQueue
+```
+
 ## Method
 
 Claude (AI assistant) was used in a Socratic mode: it set the specifications
@@ -82,10 +99,8 @@ concepts instead of giving code.
 
 - **Code:** all implementation code was written by me.
 - **Documentation:** the explanatory text (header comments and this README)
-- * Exception, `recursion/`: specifications and test inputs came from a
-  university Data Structures course. ...
   was drafted with Claude and reviewed by me.
-- **Exception, `recursion/`:** specifications came from a university Data
-  Structures course. Claude was used afterwards to document the code and to
-  reformat it (English strings, naming, indentation) without changing the
-  logic; I reviewed both the documentation and the reformatted code.
+- **Exception, `recursion/` and `stacks_queues/`:** specifications came from a
+  university Data Structures course. Claude was used afterwards to document the
+  code and to reformat it (English strings, naming, indentation) without
+  changing the logic; I reviewed both the documentation and the reformatted code.
